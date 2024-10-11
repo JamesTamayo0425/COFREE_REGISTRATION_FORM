@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="cofreeRegister">
+  <meta name="author" content="jamesGwapo">
+  <title>Cofree Register</title>
+  <!-- Bootstrap core CSS -->
+  <link href="public/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="public/css/login.css" rel="stylesheet" />
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <link href="public/plugins/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <link href="public/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+  <!-- Register style css -->
+   <link rel="stylesheet" href="registerStyle.css">
+   <!-- fontawesome -->
+  <script src="https://kit.fontawesome.com/b545dd02ba.js" crossorigin="anonymous"></script>
+  <style type="text/css">
+
+  </style>
+</head>
+
+<body>
+
+  <div class="container-fluid d-flex  align-items-center regBg">
+    <div class="row regBox m-md-5">
+      <div class="col-md-2"></div>
+      <div class="col-md-8 d-flex justify-content-center align-items-center ">
+        <div class="row w-100 signUpForms d-flex justify-content-center align-items-center">
+
+        <div class="panel-primary col-12" id="login">
+        <form id="regLogin" method="POST" class="signFormScroll">
+            <div class="panel-body px-3">
+            <div id="admin-msg"></div>
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10"> 
+                    <img src="Image/1.png" class="img-circle img-responsive" style="
+                    display: block;
+                    /* margin: 0 auto; */
+                    border-radius: 100%;
+                    margin: 3em auto 1.5em;
+                    object-fit: cover;
+                    width: 40%;"> 
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+
+            <!-- basic information -->
+            <div class="row d-flex justify-content-center align-items-center mt-4">
+                <h3 class="infoTitle">Basic Information</h3>
+                <hr>
+                <!-- create username -->
+                <div class="col-12 d-flex justify-content-center align-items-center">
+                <div class="input-group"> 
+                    <span class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <input type="text" name="username" id="username" placeholder="Create Username" required="required" class="form-control" data-validation-error-msg="Username is required" data-validation-error-msg-container="#usernamerror">
+                </div>
+                <div id="usernamerror"> </div>
+                </div>
+
+
+            <!-- input lname -->
+            
+                <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
+                <div class="input-group"> 
+                    <span class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <input type="text" name="username" id="username" placeholder="Last Name" required="required" class="form-control" data-validation-error-msg="Username is required" data-validation-error-msg-container="#usernamerror">
+                </div>
+                <div id="usernamerror"> </div>
+                </div>
+            
+
+            <!-- input fname -->
+           
+                <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
+                <div class="input-group"> 
+                    <span class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <input type="text" name="username" id="username" placeholder="First Name" required="required" class="form-control" data-validation-error-msg="Username is required" data-validation-error-msg-container="#usernamerror">
+                </div>
+                <div id="usernamerror"> </div>
+                </div>
+           
+
+            <!-- input mname -->
+          
+                <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
+                <div class="input-group"> 
+                    <span class="input-group-addon">
+                        <i class="fa fa-user"></i>
+                    </span>
+                    <input type="text" name="username" id="username" placeholder="Middle Name" required="required" class="form-control" data-validation-error-msg="Username is required" data-validation-error-msg-container="#midnamerror">
+                </div>
+                <div id="midnamerror"> </div>
+                </div>
+            </div>
+
+            <!-- email & moblie no. -->
+            <div class="row">
+                <!-- email -->
+            <div class="col-lg-7 col-md-12">
+                <div class="input-group"> 
+                    <span class="input-group-addon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </span>
+                    <input type="email" name="email" id="email" class="form-control" placeholder="Email" required="required" data-validation-error-msg-length="Email is required" data-validation-error-msg-container="#emailerror"> 
+                </div>
+                <div id="emailerror"> </div>
+            </div>
+            <!-- mobile no. -->
+            <div class="col-lg-5 col-md-12">
+                <div class="input-group"> 
+                    <span class="input-group-addon">
+                        <i class="fa-solid fa-phone"></i>
+                    </span>
+                    <input type="number" name="number" id="number" class="form-control" placeholder="Mobile Number" required="required" data-validation-error-msg-length="Mobile Number is required" data-validation-error-msg-container="#MobileNumbererror"> 
+                </div>
+                <div id="MobileNumbererror"> </div>
+                </div>
+            </div>
+            
+            <!-- create pass -->
+            <div class="row">
+                <div class="col-md-6 col-xs-12">
+                <div class="input-group"> 
+                    <span class="input-group-addon">
+                        <i class="fa-solid fa-user-lock"></i>
+                    </span>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Create Password" required="required" data-validation-length="min8" data-validation-error-msg-length="Atleast 8 characters is required" data-validation-error-msg-container="#passworderror"> 
+                </div>
+                <div id="passworderror"> </div>
+                </div>
+           
+
+            <!-- confirm pass -->
+        
+                <div class="col-md-6 col-xs-12">
+                <div class="input-group"> 
+                    <span class="input-group-addon">
+                        <i class="fa fa-lock"></i>
+                    </span>
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Confirm Password" required="required" data-validation-length="min8" data-validation-error-msg-length="Atleast 8 characters is required" data-validation-error-msg-container="#passworderror"> 
+                </div>
+                <div id="passworderror"> </div>
+                </div>
+            </div>
+
+            <!-- show pass -->
+            <div class="row">
+            <div class="col-md-12">
+                <div class="input-group showNforgotPass d-flex justify-content-between align-items-center w-100">
+                        <div>
+                            <input type="checkbox" id="showPassword">
+                            <label for="showPassword">Show Password</label>
+                        </div>
+                        <a href="#" class="forgotpass">Having problem?</a>
+                </div>
+            </div>
+            </div>
+
+            <!-- contact info -->
+            <div class="row mt-4 mb-3 d-flex justify-content-center align-items-center">
+                <h3 class="infoTitle">Contact Information</h3>
+                <hr>
+                <!-- Province -->
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="input-group"> 
+                        <span class="input-group-addon">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </span>
+                        <input type="text" name="Province" id="Province" placeholder="Province" required="required" class="form-control" data-validation-error-msg="Province is required" data-validation-error-msg-container="#Provincerror">
+                    </div>
+                    <div id="Provincerror"> </div>
+                </div>
+
+                <!-- city -->
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="input-group"> 
+                        <span class="input-group-addon">
+                            <i class="fa-solid fa-mountain-city"></i>
+                        </span>
+                        <input type="text" name="City" id="City" placeholder="City" required="required" class="form-control" data-validation-error-msg="City is required" data-validation-error-msg-container="#Cityerror">
+                    </div>
+                    <div id="Cityerror"> </div>
+                </div>
+
+                <!-- Address -->
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="input-group"> 
+                        <span class="input-group-addon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+                        <input type="text" name="address" id="address" placeholder="Address" required="required" class="form-control" data-validation-error-msg="Address is required" data-validation-error-msg-container="#addresserror">
+                    </div>
+                    <div id="addresserror"> </div>
+                </div>
+
+                <!-- Postal -->
+                <div class="col-lg-4 col-md-6 col-sm-12 d-flex justify-content-center align-items-center">
+                    <div class="input-group"> 
+                        <span class="input-group-addon">
+                            <i class="fa-solid fa-address-card"></i>
+                        </span>
+                        <input type="number" name="Postal" id="Postal" placeholder="Postal ID" required="required" class="form-control" data-validation-error-msg="Postal ID is required" data-validation-error-msg-container="#Postalerror">
+                    </div>
+                    <div id="Postalerror"> </div>
+                </div>
+            </div>
+            <!-- optional -->
+            <div class="row mt-5 mb-3 d-flex justify-content-center align-items-center">
+                <h3 class="infoTitle">Optional Information</h3>
+                <hr>
+
+                <!-- favorite -->
+                <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="input-group"> 
+                        <span class="input-group-addon">
+                            <i class="fa-solid fa-heart"></i>
+                        </span>
+                        <input type="text" name="favorite" placeholder="Favorite Coffee" class="form-control">
+                    </div>
+                </div> 
+
+                <!-- Allergies -->
+                <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="input-group"> 
+                        <span class="input-group-addon">
+                            <i class="fa-solid fa-mask-face"></i>
+                        </span>
+                        <input type="text" name="Allergies" placeholder="Allergies" class="form-control">
+                    </div>
+                </div>
+
+                <!-- Bday -->
+                <div class="col-lg-4 col-md-12 d-flex justify-content-center align-items-center">
+                    <div class="input-group"> 
+                        <span class="input-group-addon">
+                            <i class="fa-solid fa-cake-candles"></i>
+                        </span>
+                        <input type="date" name="date" placeholder="Bday" class="form-control">
+                    </div>
+                </div> 
+            </div>
+
+            <div class="row mt-5">
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                <input type="hidden" name="action" value="isLogin">
+                <button type="submit" class="hoverBtn" id="btnLogin" href="index.html"> Sign Up </button>
+                </div>
+            </div>
+            <br>
+            </div>
+        </form>
+        </div>
+
+        <div class="col-12 d-flex justify-content-center align-items-center py-5 leftLogin">
+            <div class="content text-center p-3">
+                <img src="Image/signUpVector.svg" alt="" class="vector">
+                <p>Already have account? Click the Login button to Login.</p>
+                <a class="btn hoverBtn" id="logIn" href="index.html">Login</a>
+            </div>
+        </div>
+         
+    </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+  </div>
+  <!-- Bootstrap core JavaScript
+         ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+  
+</body>
+
+</html>
